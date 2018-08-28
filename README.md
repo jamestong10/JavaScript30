@@ -12,4 +12,5 @@
 # List
 | Day | Challenge | Demo | GitHub |
 |-----|-----------|------|--------|
-| 001 | JavaScript Drum Kit | [Demo](https://jamestong10.github.io/Javascript30/01_JavaScript_Drum_Kit/index.html) | [GitHub](https://github.com/jamestong10/Javascript30/tree/master/01_JavaScript_Drum_Kit)
+| 01 | JavaScript Drum Kit | [Demo](https://jamestong10.github.io/Javascript30/01_JavaScript_Drum_Kit/index.html) | [GitHub](https://github.com/jamestong10/Javascript30/tree/master/01_JavaScript_Drum_Kit)
+| 02 | CSS and JS Clock | [Demo](https://jamestong10.github.io/Javascript30/02_CSS_and_JS_Clock/index.html) | [GitHub](https://github.com/jamestong10/Javascript30/tree/master/02_CSS_and_JS_Clock)
