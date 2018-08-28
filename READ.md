@@ -3,7 +3,7 @@
 # Javascript30
 跟著 WesBos 一起挑戰 JavaScript30
 
-* [wesbos github](https://github.com/wesbos/JavaScript30)
+* [Wesbos JavaScript30 github](https://github.com/wesbos/JavaScript30)
 * [挑戰 javascript30](https://javascript30.com/)
 
 ## 先註冊才能進入課程

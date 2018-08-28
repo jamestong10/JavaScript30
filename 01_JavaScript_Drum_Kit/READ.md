@@ -1,4 +1,5 @@
 # **01.JavaScript Drum Kit**
+![](../images/01_JavaScript_Drum_Kit.jpg)
 
 # 主題
 使用 js 監聽鍵盤的event，並產生對應的音效
