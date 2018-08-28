@@ -7,7 +7,6 @@
 # 筆記
 ## audio element
 
-audio / video 
 attribute: currentTime
 methods: play
 
