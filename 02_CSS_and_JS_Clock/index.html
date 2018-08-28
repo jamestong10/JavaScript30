@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>02 CSS and JS Clock</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-67847667-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-67847667-4');
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="clock">
+    <div class="clock-face">
+      <div class="center"></div>
+      <div class="hand hour-hand"></div>
+      <div class="hand min-hand"></div>
+      <div class="hand second-hand"></div>
+    </div>
+  </div>
+  <script>
+    const secondHand = document.querySelector(".second-hand");
+    const minHand = document.querySelector(".min-hand");
+    const hourHand = document.querySelector(".hour-hand");
+
+    function updateDate() {
+      const now = new Date();
+      // console.log(now);
+      const seconds = now.getSeconds();
+      const mins = now.getMinutes();
+      const hours = now.getHours();
+
+      // seconds
+      let secDeg = ((seconds / 60) * 360);
+      secondHand.style.transform = setRotate(secDeg);
+
+      // minutes
+      let minsDeg = ((mins / 60) * 360);
+      minHand.style.transform = setRotate(minsDeg);
+
+      // hours
+      let hoursDeg = ((hours / 12) * 360);
+      hourHand.style.transform = setRotate(hoursDeg);
+    }
+
+    function setRotate(deg) {
+      let transition_style = (deg == 0) ? 'all 0s' : 'all .05s';
+      document.querySelector('.hand').style.transition = transition_style;
+      if (deg >= 360) deg -= 360;
+      return `rotate(${deg}deg)`;
+    }
+    setInterval(updateDate, 1000);
+  </script>
+</body>
+
+</html>
