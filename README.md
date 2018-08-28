@@ -12,4 +12,4 @@
 # List
 | Day | Challenge | Demo | GitHub |
 |-----|-----------|------|--------|
-| 001 | JavaScript Drum Kit | [Demo]| [GitHub]
+| 001 | JavaScript Drum Kit | [Demo](https://jamestong10.github.io/Javascript30/01_JavaScript_Drum_Kit/index.html) | [GitHub](https://github.com/jamestong10/Javascript30/tree/master/01_JavaScript_Drum_Kit)

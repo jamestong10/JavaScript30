@@ -3,12 +3,15 @@
 
 # 主題
 使用 js 監聽鍵盤的event，並產生對應的音效
-## [Demo]() | [GitHub]()
+
+[Demo](https://jamestong10.github.io/Javascript30/01_JavaScript_Drum_Kit/index.html) | [GitHub](https://github.com/jamestong10/Javascript30/tree/master/01_JavaScript_Drum_Kit)
 
 # 筆記
+
 ## audio element
 
-attribute: currentTime
+attributes: currentTime
+設定目前時間，在此用來重設起始時間
 methods: play
 
 ```
@@ -17,7 +20,7 @@ audio.currentTime = 0; // rewind to the start
 audio.play();
 ```
 
-## data-attributes
+## data-* attributes
 html 元件可以指定 data-* 的屬性
 
 ```
@@ -34,14 +37,13 @@ const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
 const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
 ```
 
-string literal
-使用 `${var_name}` 就可替換值
+## String literal
+使用**反引號**加 `${var_name}` 就可替字串變數值
 
 ## addEventListener
-
-替每個 dom element 加上事件監聽器
-如果取得 Arry 要逐筆增加（可以使用 forEach)
-第一次看到  [transitionend](https://developer.mozilla.org/en-US/docs/Web/Events/transitionend) event
+- 替每個 dom element 加上事件監聽器
+- dom Arry 要逐筆增加（可以使用 forEach)
+- [transitionend](https://developer.mozilla.org/en-US/docs/Web/Events/transitionend) event (第一次看到)
 
 ```
 const keys = document.querySelectorAll('.key');
