@@ -1,12 +1,10 @@
 # **01.JavaScript Drum Kit**
 ![](../images/01_JavaScript_Drum_Kit.jpg)
 
+## [Demo](https://jamestong10.github.io/Javascript30/01_JavaScript_Drum_Kit/index.html) | [GitHub](https://github.com/jamestong10/Javascript30/tree/master/01_JavaScript_Drum_Kit)
+
 # 主題
 使用 js 監聽鍵盤的event，並產生對應的音效
-
-[Demo](https://jamestong10.github.io/Javascript30/01_JavaScript_Drum_Kit/index.html) | [GitHub](https://github.com/jamestong10/Javascript30/tree/master/01_JavaScript_Drum_Kit)
-
-# 筆記
 
 ## audio element
 

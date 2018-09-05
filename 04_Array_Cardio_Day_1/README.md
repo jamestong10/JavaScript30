@@ -1,25 +1,25 @@
 # **04 Array Cardio Day 1**
 ![](../images/04_Array_Cardio_Day_1.jpg)
+
 Photo by Chris Ried on Unsplash
 
+## [Demo](https://jamestong10.github.io/Javascript30/04_Array_Cardio_Day_1/index.html) | [GitHub](https://github.com/jamestong10/Javascript30/tree/master/04_Array_Cardio_Day_1)
+
 # 主題
+
 作者設計八個範例介紹 Array methods 操作
 
-[Demo](https://jamestong10.github.io/Javascript30/04_Array_Cardio_Day_1/index.html) | [GitHub](https://github.com/jamestong10/Javascript30/tree/master/04_Array_Cardio_Day_1)
-
-# 筆記
-
-## JS
+## Array
 
 這次用到的都是 instance methods of Array
 
 只有 `Array.from()` 是 class method of Array
 
-### 0. console.table
+## 0. console.table
 基本的輸出使用 `console.log()`
 但這邊有教到使用 `console.table(variables)` 讓資料以表格呈現
 
-### [1. arr.filter()](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+## [1. arr.filter()](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 
 此函式為一個斷言，用於測試陣列中的每個元素。回傳值為 true 時將當前的元素保留至新陣列中，若為 false 則不保留。
 
@@ -37,7 +37,7 @@ const fifteens = inventors.filter(function (inventor) {
 const fifteens = inventors.filter(inventor => inventor.year >= 1500 && inventor.year < 1600);
 ```
 
-### [2. arr.map()](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+## [2. arr.map()](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
 map 會將所有陣列中的元素依序分別傳入一次至 callback 函式當中，並以此回呼函式每一次被呼叫的回傳值來建構一個新的陣列。
 
@@ -52,8 +52,8 @@ const full_name = inventors.map(inventor => `${inventor.first} ${inventor.last}`
 ```
 
 ## 比較 arr.forEach() v.s. arr.map() 的差別
-forEach: 執行每個 element 執行callback，直接修改原 array object
-map: 產生新的 array object 存入每個元素執行 callback 的結果
+forEach: 執行每個 element 執行callback，直接修改原array object
+map: 產生新的array object存入每個元素執行 callback 的結果
 
 ## [3. arr.sort()](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 
