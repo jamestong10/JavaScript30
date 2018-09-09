@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>07 Array Cardio Day 2</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-67847667-4"></script>
+  <script src="../javascripts/ga.js"></script>
+  <link rel="shortcut icon" type="image/png" href="../images/favion-JS3.png">
+</head>
+
+<body>
+  <p><em>Psst: have a look at the JavaScript Console</em> 💁</p>
+  <script>
+    // ## Array Cardio Day 2
+
+    const people = [
+      { name: 'Wes', year: 1988 },
+      { name: 'Kait', year: 1986 },
+      { name: 'Irv', year: 1970 },
+      { name: 'Lux', year: 2015 }
+    ];
+
+    const comments = [
+      { text: 'Love this!', id: 523423 },
+      { text: 'Super good', id: 823423 },
+      { text: 'You are the best', id: 2039842 },
+      { text: 'Ramen is my fav food ever', id: 123523 },
+      { text: 'Nice Nice Nice!', id: 542328 }
+    ];
+
+    // Some and Every Checks
+    // Array.prototype.some() // is at least one person 19 or older?
+
+    // const isAdult = people.some((person) => {
+    //   const currentYear = (new Date()).getFullYear();
+    //   return (currentYear - person.year) >= 19;
+    // });
+
+    // arrow function
+    const adultAge = 19
+    const isAdult = people.some((person) =>
+      ((new Date()).getFullYear() - person.year) >= adultAge
+    );
+
+    console.log(isAdult);
+
+    // Array.prototype.every() // is everyone 19 or older?
+    const allAdult = people.every((person) =>
+      ((new Date()).getFullYear() - person.year) >= adultAge
+    );
+
+    console.log(allAdult);
+
+    // Array.prototype.find()
+    // Find is like filter, but instead returns just the one you are looking for
+    // find the comment with the ID of 823423
+    let commentId = 823423
+    const theComment = comments.find((comment) => comment.id === commentId);
+
+    console.log(theComment);
+
+    // 產生物件
+    console.log({ theComment });
+    // Array.prototype.findIndex()
+    // Find the comment with this ID
+    // delete the comment with the ID of 823423
+    const index = comments.findIndex((comment) => comment.id === commentId);
+
+    console.log(index);
+
+    // 1. directly modified comments instance
+    // comments.splice(index, 1);
+    // console.table(comments);
+
+    // 2. keep comments instance
+    const newComments = [
+      ...comments.splice(0, index),
+      ...comments.splice(index)
+    ]
+    console.table(newComments);
+  </script>
+</body>
+
+</html>
