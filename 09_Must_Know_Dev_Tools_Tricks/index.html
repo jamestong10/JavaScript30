@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>09 Must Know Dev Tools Tricks</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-67847667-4"></script>
+  <script src="../javascripts/ga.js"></script>
+  <link rel="shortcut icon" type="image/png" href="../images/favion-JS3.png">
+</head>
+
+<body>
+
+  <p onClick="makeGreen()">×BREAK×DOWN×</p>
+
+  <script>
+    const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+
+    function makeGreen() {
+      const p = document.querySelector('p');
+      p.style.color = '#BADA55';
+      p.style.fontSize = '50px';
+    }
+
+    // clearing
+    console.clear();
+
+    // Regular
+    console.log("Hello");
+
+    // Interpolated
+    console.log("My name is %s", "James");
+    // ES6 
+    //console.log(`My name is ${name}`);
+
+    // Styled
+    console.log("%c You can tailor text", 'font-size: 20px; color: white; background: #5b5b5b; padding: 3px')
+
+    // warning!
+    console.warn("This is warning");
+
+    // Error :|
+    console.error("This is error!");
+
+    // Info
+    console.info("Hippo kills a hundred of people every year in Africa.");
+
+    // Testing => Assert
+    const p = document.querySelector("p");
+
+    console.assert(p.classList.contains("ouch"), "the class is missing.");
+    console.assert(1 === 2, "the value is not match.");
+
+    // Viewing DOM Elements
+    console.log(p);
+    console.dir(p);
+    console.clear();
+
+    // Grouping together
+    dogs.forEach(dog => {
+      // console.group(`${dog.name}`);
+      console.groupCollapsed(`${dog.name}`);
+      console.log(`This is ${dog.name}`);
+      console.log(`${dog.name} is ${dog.age} years old.`);
+      console.log(`${dog.name} is ${dog.age * 7} dog years old.`);
+      console.groupEnd(`${dog.name}`);
+    });
+
+    // counting
+    // word, number, object, dom node
+    console.count('A');
+    console.count('A');
+    console.count('B');
+    console.count('B');
+    console.count('A');
+    console.count('A');
+    console.count('A');
+    console.count('B');
+
+    // timing
+    console.time('fetching data');
+    fetch('https://api.github.com/users/jamestong10')
+      .then(data => data.json())
+      .then(data => {
+        console.timeEnd('fetching data');
+        console.log(data);
+      });
+
+    // table
+    console.table(dogs);
+  </script>
+</body>
+
+</html>
