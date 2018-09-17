@@ -20,8 +20,8 @@
 | 06 | Type Ahead | [Demo](https://jamestong10.github.io/Javascript30/06_Ajax_Type_Ahead/index.html) | [Javascript](https://github.com/jamestong10/Javascript30/tree/master/06_Ajax_Type_Ahead) |
 | 07 | Array Cardio Day 2 | [Demo](https://jamestong10.github.io/Javascript30/07_Array_Cardio_Day_2/index.html) | [Javascript](https://github.com/jamestong10/Javascript30/tree/master/07_Array_Cardio_Day_2) |
 | 08 | Fun with HTML5 Canvas | [Demo](https://jamestong10.github.io/Javascript30/08_Fun_with_HTML5_Canvas/index.html) | [Javascript](https://github.com/jamestong10/Javascript30/tree/master/08_Fun_with_HTML5_Canvas) |
-| 09 | Dev Tools Domination | [Demo](https://jamestong10.github.io/Javascript30/PROJECT/index.html) | [Javascript](https://github.com/jamestong10/Javascript30/tree/master/PROJECT) |
-| 10 | Hold Shift and Check Checkboxes | [Demo](https://jamestong10.github.io/Javascript30/PROJECT/index.html) | [Javascript](https://github.com/jamestong10/Javascript30/tree/master/PROJECT) |
+| 09 | Dev Tools Domination | [Demo](https://jamestong10.github.io/Javascript30/09_Must_Know_Dev_Tools_Tricks/index.html) | [Javascript](https://github.com/jamestong10/Javascript30/tree/master/09_Must_Know_Dev_Tools_Tricks) |
+| 10 | Hold Shift and Check Checkboxes | [Demo](https://jamestong10.github.io/Javascript30/10_Hold_Shift_to_Check_Multiple_Checkboxes/index.html) | [Javascript](https://github.com/jamestong10/Javascript30/tree/master/10_Hold_Shift_to_Check_Multiple_Checkboxes) |
 | 11 | Custom Video Player | [Demo](https://jamestong10.github.io/Javascript30/PROJECT/index.html) | [Javascript](https://github.com/jamestong10/Javascript30/tree/master/PROJECT) |
 | 12 | Key Sequence Detection | [Demo](https://jamestong10.github.io/Javascript30/PROJECT/index.html) | [Javascript](https://github.com/jamestong10/Javascript30/tree/master/PROJECT)    |
 | 13 | Slide in on Scroll | [Demo](https://jamestong10.github.io/Javascript30/PROJECT/index.html) | [Javascript](https://github.com/jamestong10/Javascript30/tree/master/PROJECT) |
