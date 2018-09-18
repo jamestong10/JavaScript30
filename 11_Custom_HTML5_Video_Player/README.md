@@ -11,7 +11,7 @@
 
 ## document#querySelector
 
-使用 querySelector 取得的結果，可以在使用 #querySelector
+使用 #querySelector 取得的dom，可以再使用 #querySelector
 
 ## Video element
 
