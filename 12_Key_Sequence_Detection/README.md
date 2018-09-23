@@ -1,6 +1,6 @@
 # **12 Key Sequence Detection**
 <!-- ![](../images/12_Key_Sequence_Detection.jpg) -->
-<img width="800" alt="11_Custom_HTML5_Video_Player" src="../images/12_Key_Sequence_Detection.jpg">
+<img width="800" alt="12_Key_Sequence_Detection" src="../images/12_Key_Sequence_Detection.jpg">
 
 ## [Demo](https://jamestong10.github.io/Javascript30/12_Key_Sequence_Detection/index.html) | [GitHub](https://github.com/jamestong10/Javascript30/tree/master/12_Key_Sequence_Detection)
 
