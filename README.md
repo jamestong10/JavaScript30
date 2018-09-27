@@ -27,7 +27,7 @@
 | 13 | Slide in on Scroll | [Demo][013Demo] | [Javascript][013Js] |
 | 14 | JavaScript References VS Copying | [Demo][014Demo] | [Javascript][014Js] |
 | 15 | LocalStorage | [Demo][015Demo] | [Javascript][015Js] |
-| 16 | Mouse Move Shadow | [Demo][099Demo] | [Javascript][099Js] |
+| 16 | Mouse Move Shadow | [Demo][016Demo] | [Javascript][016Js] |
 | 17 | Sort Without Articles | [Demo][099Demo] | [Javascript][099Js] |
 | 18 | Adding Up Times with Reduce | [Demo][099Demo] | [Javascript][099Js] |
 | 19 | Webcam Fun | [Demo][099Demo] | [Javascript][099Js] |
@@ -73,8 +73,8 @@
 [014Js]:https://github.com/jamestong10/Javascript30/tree/master/14_Reference_VS_Copy
 [015Demo]:https://jamestong10.github.io/Javascript30/15_LocalStorage_and_Event_Delegation/index.html
 [015Js]:https://github.com/jamestong10/Javascript30/tree/master/15_LocalStorage_and_Event_Delegation
-
-
+[016Demo]:https://jamestong10.github.io/Javascript30/16_Mouse_Move_Shadow/index.html
+[016Js]:https://github.com/jamestong10/Javascript30/tree/master/16_Mouse_Move_Shadow
 
 [099Demo]:https://jamestong10.github.io/Javascript30/PROJECT/index.html
 [099Js]:https://github.com/jamestong10/Javascript30/tree/master/PROJECT
