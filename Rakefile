@@ -1,29 +1,35 @@
 require 'rake'
 
-desc "Create new folder with input parameter"
+desc "Create new folder with input arguments"
 task :new, [:arg1] do |task, args|
-  puts "-- Start new --"
+  puts "-- Start --"
   names = args[:arg1].split(" ")
   names[0] = names.first.rjust(2,"0")
-  project = names.join("_")
-  puts "Create folder #{project}"
-  system 'mkdir', project
-  heading = names.join(" ")
-  add_html(heading, project)
-  add_readme(heading, project)
-  puts "Create README.md"
-  puts "-- Finish new --"
+  puts "Create folder"
+  add_folder(names)
+  puts "Create HTML"
+  add_html(names)
+  puts "Create README"
+  add_readme(names)
+  puts "-- Finish --"
 end
 
-def add_html(heading, project)
+def add_folder(data)
+  system 'mkdir', data.join("_")
+end
+
+def add_html(data)
+  project = data.join("_")
   html = File.read('index-example.html')
-  html = html.gsub("HEADING", heading)
+  html = html.gsub("HEADING", data.join(" "))
+  html = html.gsub("NUMBER", data[0])
   File.open("#{project}/index.html", 'w+') { |f| f.write(html) }
 end
 
-def add_readme(heading, project)
+def add_readme(data)
+  project = data.join("_")
   content = File.read("README-example.md")
-  content = content.gsub("HEADING", heading)
+  content = content.gsub("HEADING", data.join(" "))
   content = content.gsub("PROJECT", project)
   File.open("#{project}/README.md","w+") { |f| f.write(content) }
 end
