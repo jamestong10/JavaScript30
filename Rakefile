@@ -29,6 +29,7 @@ end
 def add_readme(data)
   project = data.join("_")
   content = File.read("README-example.md")
+  content = content.gsub("NUMBER", data.first)
   content = content.gsub("HEADING", data.join(" "))
   content = content.gsub("PROJECT", project)
   File.open("#{project}/README.md","w+") { |f| f.write(content) }
