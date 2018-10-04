@@ -1,2 +1,4 @@
 .vscode/*
 wesbos-javascript30/*
+*/node_modules/*
+*/package-lock.json
