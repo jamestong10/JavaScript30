@@ -3,9 +3,9 @@
 <!-- <img width="800" alt="19_Unreal_Webcam_Fun" src="../images/19_Unreal_Webcam_Fun.jpg"> -->
 
 ## [Demo][019Demo] | [GitHub][019Js]
-
-[019Demo]:https://jamestong10.github.io/Javascript30/18_Tally_String_Times_with_Reduce/index.html
-[019Js]:https://github.com/jamestong10/Javascript30/tree/master/19_Unreal_Webcam_Fun
+
+[019Demo]:https://jamestong10.github.io/Javascript30/19_Unreal_Webcam_Funs_with_Reduce/index.html
+[019Js]:https://github.com/jamestong10/Javascript30/tree/master/19_Unreal_Webcam_Funs_with_Reduce
 
 # 主題
 
@@ -33,7 +33,7 @@ navigator.mediaDevices.getUserMedia({ video: true, audio: false })
 
 建立一個帶有URL的 DOMString 以代表參數中所傳入的物件. 該URL的生命週期與創造它的window中的 document一致. 這個新的物件URL 代表了所指定的 File 物件 或是 Blob 物件.
 
-作者使用此方法將視訊頻道顯示在頁面
+作者使用此方法將視訊頻道與video 串接
 
 ```
 video.src = window.URL.createObjectURL(localMediaStream);
@@ -41,7 +41,7 @@ video.src = window.URL.createObjectURL(localMediaStream);
 
 ## 讓 canvas 產生有視訊的效果
 
-使用 #drawImage 將video 內容呈現在 canvas
+作者每16毫秒從video 抓取圖片，透過#drawImage 繪製在canvas
 
 ```
 setInterval(() => {
@@ -49,11 +49,11 @@ setInterval(() => {
   }, 16);
 ```
 
-## 產生圖片
+## 建立拍照功能
 
-作者設計拍照按鈕，點選按鈕會有拍照聲並且顯示照片
+作者設計點選按鈕會有拍照聲和顯示照片
 
-使用`canvas#toDataURL` 產生圖片，預設是`image/png`，作者使用`images/jpeg`
+使用`canvas#toDataURL` 產生圖片，預設是`image/png`，建議使用`images/jpeg`
 
 ```
 function takePhoto() {
@@ -64,18 +64,16 @@ function takePhoto() {
   // take the data out of the canvas
   const data = canvas.toDataURL('image/jpeg');
   const link = document.createElement('a');
-  // console.log(data);
   link.href = data;
   link.setAttribute('download', 'handsome');
-  // link.textContent = 'downlaod';
   link.innerHTML = `<img src="${data}" alt="photo"/>`
   strip.insertBefore(link, strip.firstChild);
 }
 ```
 
-## 改變圖片
+## 修改圖片
 
-作者說明圖片直接印出，只會看到一連串的文字，透過`#getImageData` 可取得rgba所組成的陣列
+作者示範將圖片印出，只會看到一連串的文字，透過`#getImageData` 可取得rgba所組成的陣列
 
 ![](../images/19_getImageData.jpg)
 
