@@ -1,4 +1,4 @@
-# **HEADING**
+# **TITLE**
 ![](../images/PROJECT.jpg)
 
 ## [Demo][NUMBERDemo] | [GitHub][NUMBERJs]
