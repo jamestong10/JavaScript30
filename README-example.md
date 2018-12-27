@@ -1,10 +1,10 @@
 # **TITLE**
-![](../images/PROJECT.jpg)
+![](../images/FOLDERNAME.jpg)
 
-## [Demo][NUMBERDemo] | [GitHub][NUMBERJs]
+## [Demo][ORDERDemo] | [GitHub][ORDERJs]
 
-[NUMBERDemo]:https://jamestong10.github.io/Javascript30/PROJECT/index.html
-[NUMBERJs]:https://github.com/jamestong10/Javascript30/tree/master/PROJECT
+[ORDERDemo]:https://jamestong10.github.io/Javascript30/FOLDERNAME/index.html
+[ORDERJs]:https://github.com/jamestong10/Javascript30/tree/master/FOLDERNAME
 
 # 主題
 
