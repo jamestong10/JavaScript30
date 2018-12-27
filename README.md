@@ -9,6 +9,15 @@
 ## 先註冊才能進入課程
 ![stream course](images/challenge_course.jpg)
 
+## 建檔小精靈
+
+```
+$rake new[course_name]
+
+# eg.
+$ rake new[01 JavaScript Drum Kit]
+```
+
 # List
 | Day | Challenge | Demo | Github |
 |-----|-----------|------|--------|
